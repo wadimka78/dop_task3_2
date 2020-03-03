@@ -1,0 +1,146 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       Курсы GLO!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2020 wadimka. All Rights Reserved.
+ * @authors       Вадим
+ *------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('font/PFDinTextCondPro-Regular.eot');
+    src: url('font/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/PFDinTextCondPro-Regular.svg#PFDinTextCondPro-Regular') format('svg'),
+        url('font/PFDinTextCondPro-Regular.ttf') format('truetype'),
+        url('font/PFDinTextCondPro-Regular.woff') format('woff'),
+        url('font/PFDinTextCondPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+.row {
+    text-align: center;
+}
+
+.row__title {
+    margin-top: 270px;
+    margin-bottom: 75px;
+    color: #666666;
+    font-family: "PF Din Text Cond Pro";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.row__goods-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goods-block__product {
+    max-width: 25%;
+    padding: 0px 1%;
+}
+
+@media (min-width: 412px)and (max-width: 600px) {
+    .goods-block__product {
+        width: 50%;
+        max-width: 50%;
+        flex: 50%;
+        padding: 1%;
+    }
+}
+
+@media (max-width: 411px) {
+    .goods-block__product {
+        width: 100%;
+        max-width: 100%;
+        flex: 100%;
+        padding: 1%;
+    }
+}
+
+.product__title {
+    /* Style for "Горизонтал" */
+    color: #666666;
+    font-family: "PF Din Text Cond Pro";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 30px 0;
+}
+
+.product__buttons-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__button {
+    width: 49%;
+    padding: 7px 33px;
+    font-family: "PF Din Text Cond Pro";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    outline: none;
+
+}
+
+@media (min-width: 412px)and (max-width: 1023px) {
+    .product__button {
+        width: 100%;
+    }
+
+    .product__buttons-wrap {
+        display: block;
+    }
+
+    .product__button--order {
+        margin-top: 8px;
+    }
+}
+
+.product__button--readmore {
+    color: #66cc66;
+    border: 2px solid #66cc66;
+    background-color: transparent;
+}
+
+.product__button--order {
+    background-color: #ff9933;
+    background-color: #66cc66;
+    border: 2px solid #66cc66;
+    color: #ffffff;
+}
+
+.product__button--readmore:hover,
+.product__button--readmore:focus,
+.product__button--readmore:active {
+    background-color: #66cc66;
+    border: 2px solid #66cc66;
+    color: #ffffff;
+}
