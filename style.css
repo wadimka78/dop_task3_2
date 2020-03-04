@@ -37,40 +37,56 @@ img {
     max-width: 100%;
 }
 
-.container {
+/* .container {
     width: 100%;
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1140px;
-        margin: auto;
-    }
-}
+} */
 
 .propose,
 .additional {
     font-family: "Proxima Nova";
-    text-align: center;
     background-color: #006a00;
+}
+
+.servis-cards,
+.extra-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
 }
 
 .propose__title {
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
+    padding-top: 120px;
 }
 
 .propose__subtitle {
     color: #ffffff;
     font-weight: 400;
+    margin-bottom: 90px;
 }
 
 .propose__subtitle--size {
     font-size: 18px;
 }
 
+.propose__servis-cards {
+    padding-bottom: 117px;
+}
+
+.servis-cards .card {
+    /*либо использовать .propose__servis-cards ? */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .card {
+    position: relative;
     width: 400px;
     height: 660px;
     box-shadow: 0 14px 21px rgba(0, 0, 0, 0.17);
@@ -104,7 +120,7 @@ img {
     line-height: 30px;
 }
 
-.card__list li {
+.card__list--add li { /*Для последней, дополнительной третьей секции))*/
     background-image: url("img/checked.png");
     background-repeat: no-repeat;
     display: block;
@@ -112,8 +128,17 @@ img {
     background-position-y: 40%;
 }
 
+/* text-align: left;
+    text-indent: 50px; */
 
-.product__button--order {
+.card__button {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -105px;
+}
+
+.card__button--order {
     color: #ffffff;
     font-family: 'Proxima Nova - Semibold';
     font-size: 18px;
@@ -127,19 +152,6 @@ img {
     background-image: linear-gradient(to top, #f5ad00 0%, #ffb504 100%);
 }
 
-
-
-
-.servis-cards,
-.extra-cards {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.goods-block__product {
-    max-width: 25%;
-    padding: 0px 1%;
-}
 
 @media (min-width: 412px)and (max-width: 600px) {
     .card {
@@ -159,47 +171,6 @@ img {
     }
 }
 
-.card__title {
-    /* Style for "Горизонтал" */
-    color: #666666;
-    font-family: "PF Din Text Cond Pro";
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin-top: 30px 0;
-}
-
-.product__buttons-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-.product__button {
-    width: 49%;
-    padding: 7px 33px;
-    font-family: "PF Din Text Cond Pro";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 25px;
-    text-transform: uppercase;
-    outline: none;
-
-}
-
-@media (min-width: 412px)and (max-width: 1023px) {
-    .product__button {
-        width: 100%;
-    }
-
-    .product__buttons-wrap {
-        display: block;
-    }
-
-    .product__button--order {
-        margin-top: 8px;
-    }
-}
 
 .product__button--readmore {
     color: #66cc66;
