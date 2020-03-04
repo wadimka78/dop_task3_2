@@ -37,10 +37,6 @@ img {
     max-width: 100%;
 }
 
-/* .container {
-    width: 100%;
-} */
-
 .propose,
 .additional {
     font-family: "Proxima Nova";
@@ -103,7 +99,6 @@ img {
     margin-bottom: 90px;
 }
 
-
 .card__title {
     color: #1a1820;
     font-size: 19px;
@@ -140,8 +135,6 @@ img {
     margin-right: 10px;
 }
 
-
-
 .card__list--add li {
     /*Для последней, дополнительной третьей секции))*/
     background-image: url("img/checked.png");
@@ -162,9 +155,10 @@ img {
     left: 50%;
     margin-left: -105px;
 }
+
 .extra-cards .card__button {
     position: static;
-    margin:50px auto 122px auto;
+    margin: 50px auto 122px auto;
 }
 
 .card__button--order {
@@ -180,7 +174,6 @@ img {
     background-color: #ffb504;
     background-image: linear-gradient(to top, #f5ad00 0%, #ffb504 100%);
 }
-
 
 @media (min-width: 412px)and (max-width: 600px) {
     .card {
@@ -198,26 +191,4 @@ img {
         flex: 100%;
         padding: 1%;
     }
-}
-
-
-.product__button--readmore {
-    color: #66cc66;
-    border: 2px solid #66cc66;
-    background-color: transparent;
-}
-
-.product__button--order {
-    background-color: #ff9933;
-    background-color: #66cc66;
-    border: 2px solid #66cc66;
-    color: #ffffff;
-}
-
-.product__button--readmore:hover,
-.product__button--readmore:focus,
-.product__button--readmore:active {
-    background-color: #66cc66;
-    border: 2px solid #66cc66;
-    color: #ffffff;
 }
