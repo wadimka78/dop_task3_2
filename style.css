@@ -7,13 +7,23 @@
  *------------------------------------------------------------------------------*/
 
 @font-face {
-    font-family: 'PF Din Text Cond Pro';
-    src: url('font/PFDinTextCondPro-Regular.eot');
-    src: url('font/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/PFDinTextCondPro-Regular.svg#PFDinTextCondPro-Regular') format('svg'),
-        url('font/PFDinTextCondPro-Regular.ttf') format('truetype'),
-        url('font/PFDinTextCondPro-Regular.woff') format('woff'),
-        url('font/PFDinTextCondPro-Regular.woff2') format('woff2');
+    font-family: 'Proxima Nova - Semibold';
+    src: url('font/ProximaNova-Semibold.eot');
+    src: local('font/Proxima Nova Semibold'), local('font/ProximaNova-Semibold'),
+        url('font/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('font/ProximaNova-Semibold.woff') format('woff'),
+        url('font/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('font/ProximaNova-Regular.eot');
+    src: local('font/Proxima Nova Regular'), local('font/ProximaNova-Regular'),
+        url('font/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/ProximaNova-Regular.woff') format('woff'),
+        url('font/ProximaNova-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +39,6 @@ img {
 
 .container {
     width: 100%;
-
 }
 
 @media (min-width: 1024px) {
@@ -39,22 +48,90 @@ img {
     }
 }
 
-.row {
+.propose,
+.additional {
+    font-family: "Proxima Nova";
+    text-align: center;
+    background-color: #006a00;
+}
+
+.propose__title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.propose__subtitle {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.propose__subtitle--size {
+    font-size: 18px;
+}
+
+.card {
+    width: 400px;
+    height: 660px;
+    box-shadow: 0 14px 21px rgba(0, 0, 0, 0.17);
+    background-color: #ffffff;
     text-align: center;
 }
 
-.row__title {
-    margin-top: 270px;
-    margin-bottom: 75px;
-    color: #666666;
-    font-family: "PF Din Text Cond Pro";
-    font-size: 35px;
+.card__title {
+    color: #1a1820;
+    font-size: 19px;
     font-weight: 700;
-    line-height: 25px;
-    text-transform: uppercase;
+    line-height: 20px;
 }
 
-.row__goods-block {
+.card__price {
+    color: #1a1820;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.card__price span {
+    font-size: 30px;
+}
+
+.card__list--font {
+    color: #1a1820;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.card__list li {
+    background-image: url("img/checked.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-position-x: 20%;
+    background-position-y: 40%;
+}
+
+
+.product__button--order {
+    color: #ffffff;
+    font-family: 'Proxima Nova - Semibold';
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 25px 60px;
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    border: 1px solid #ffba15;
+    background-color: #ffb504;
+    background-image: linear-gradient(to top, #f5ad00 0%, #ffb504 100%);
+}
+
+
+
+
+.servis-cards,
+.extra-cards {
     display: flex;
     flex-wrap: wrap;
 }
@@ -65,7 +142,7 @@ img {
 }
 
 @media (min-width: 412px)and (max-width: 600px) {
-    .goods-block__product {
+    .card {
         width: 50%;
         max-width: 50%;
         flex: 50%;
@@ -74,7 +151,7 @@ img {
 }
 
 @media (max-width: 411px) {
-    .goods-block__product {
+    .card {
         width: 100%;
         max-width: 100%;
         flex: 100%;
@@ -82,7 +159,7 @@ img {
     }
 }
 
-.product__title {
+.card__title {
     /* Style for "Горизонтал" */
     color: #666666;
     font-family: "PF Din Text Cond Pro";
